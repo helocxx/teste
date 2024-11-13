@@ -1,0 +1,228 @@
+/* Fonte e cores principais */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+header {
+  background-color: #f5f5f5;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px; /* ajuste conforme necessário */
+  height: 70px; /* altura do cabeçalho */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000c2;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #999999;
+}
+
+/* Para alinhar a logo à direita S*/
+header {
+  display: flex;
+  justify-content: center;
+  padding-right: 20px; /* ajuste conforme necessário */
+}
+
+/* Posicionar a logo livremente (absoluto) */
+.logo {
+  position: absolute;
+  top: 02px; /* ajuste a distância do topo */
+  left: 50px; /* ajuste a distância da esquerda */
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#sobre-img {
+  width: 200px; /* Tamanho das imagens */
+  height: auto;
+  float: left; /* Coloca as imagens lado a lado */
+  margin-right: 100px; /* Espaçamento entre as imagens */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  justify-content: space-around; /* Espaço igual entre as imagens */
+  display: flex;
+}
+
+/* Estilização para o texto da tag h1 */
+h1 {
+  font-size: 35px; /* Ajuste o tamanho conforme desejado */
+  font-weight: bold; /* Opcional: deixa o texto mais grosso */
+  color: #333; /* Cor opcional para o texto */
+}
+
+h3 {
+  font-size: 20px; /* Ajuste o tamanho conforme desejado */
+  font-weight: bold; /* Opcional: deixa o texto mais grosso */
+  color: #333; /* Cor opcional para o texto */
+}
+
+/* Define o contêiner galeria como um contêiner flex */
+.galeria {
+  display: flex;
+  gap: 150px; /* Espaço entre os itens */
+  justify-content: center; /* Centraliza os itens */
+  flex-wrap: wrap; /* Faz com que os itens se ajustem na linha quando a tela for menor */
+}
+
+/* Estiliza cada item (imagem e texto juntos) */
+.item {
+  text-align: center; /* Centraliza a imagem e o texto */
+  width: 200px; /* Ajuste conforme desejado */
+}
+
+/* Estilo para cada imagem */
+.imagem {
+  width: 80%; /* Faz a imagem ocupar toda a largura do item */
+  height: auto; /* Mantém a proporção */
+  border-radius: 8px; /* Bordas arredondadas, opcional */
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); /* Sombra, opcional */
+}
+
+/* Estilo para o texto */
+.item p {
+  font-size: 16px; /* Tamanho do texto */
+  color: #333; /* Cor do texto */
+  margin-top: 8px; /* Espaço entre a imagem e o texto */
+}
+
+.servicos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.servico {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.equipe {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.membro {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  flex: 1 1 150px;
+  text-align: center;
+}
+
+.membro img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* Estilos do container */
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Estilo da imagem */
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+/* Estilização da logo */
+.logo {
+  width: 75px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  max-width: 100%; /* Mantém a imagem responsiva */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.checkbox {
+  display: none; /* Oculta o checkbox */
+}
+
+.botao {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f5f5f5;
+  color: #080808;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background-color: #999999;
+}
+
+.caixa-texto {
+  display: none; /* Oculta o conteúdo inicialmente */
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.checkbox:checked + .botao + .caixa-texto {
+  display: block; /* Exibe a caixa de texto ao marcar o checkbox */
+}
